@@ -10,7 +10,6 @@
 
 4. Push the changes to GitHub or GitLab.
 
-![surfs-up.png](Images/surfs-up.png)
 
 ## Instructions
 
