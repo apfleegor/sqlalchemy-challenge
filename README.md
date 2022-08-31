@@ -1,18 +1,5 @@
 # Unit 10 Homework: Surf’s Up
 
-## Before You Begin
-
-1. Create a new repository for this project called `sqlalchemy-challenge`. **Do not add this homework to an existing repository**.
-
-2. Clone the new repository to your computer.
-
-3. Add your Jupyter notebook and `app.py` to this folder. These will be the main scripts to run for analysis.
-
-4. Push the changes to GitHub or GitLab.
-
-
-## Instructions
-
 Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following sections outline the steps you must take to accomplish this task.
 
 ### Part 1: Climate Analysis and Exploration
@@ -71,9 +58,7 @@ To perform an analysis of stations in the area, do the following:
 
     * Query the previous 12 months of temperature observation data for this station.
 
-    * Plot the results as a histogram with `bins=12`, as shown in the following image:
-
-    ![station-histogram](Images/station-histogram.png)
+    * Plot the results as a histogram with `bins=12`
 
 * Close out your session.
 
@@ -115,11 +100,6 @@ Use Flask to create your routes, as follows:
 
     * When given the start and the end date, calculate the `TMIN`, `TAVG`, and `TMAX` for dates from the start date through the end date (inclusive).
 
-## Hints
-
-* You will need to join the station and measurement tables for some of the queries.
-
-* Use Flask `jsonify` to convert your API data into a valid JSON response object.
 
 ### Bonus: Other Recommended Analyses
 
@@ -153,15 +133,13 @@ Complete the following steps:
 
 * Use the `calc_temps` function to calculate the minimum, average, and maximum temperatures for your trip using the matching dates from a previous year (for example, use "2017-08-01").
 
-* Plot the minimum, average, and maximum temperature from your previous query as a bar chart, as captured in the following steps and image:
+* Plot the minimum, average, and maximum temperature from your previous query as a bar chart, as captured in the following steps:
 
     * Use "Trip Avg Temp" as the title.
 
     * Use the average temperature as the bar height (_y_ value).
 
     * Use the peak-to-peak (TMAX-TMIN) value as the _y_ error bar (YERR).
-
-    ![temperature](Images/temperature.png)
 
 #### Daily Rainfall Average
 
@@ -189,21 +167,10 @@ Complete the following steps:
 
 * Load the list of daily normals into a Pandas DataFrame, and set the index equal to the date.
 
-* Use Pandas to plot an area plot (`stacked=False`) for the daily normals, as shown in the following image:
-
-  ![daily-normals](Images/daily-normals.png)
+* Use Pandas to plot an area plot (`stacked=False`) for the daily normals
 
 * Close out your session.
 
-## Rubric
-
-[Unit 10 Homework Rubric](https://docs.google.com/document/d/1gT29iMF3avSvJruKpcHY4qovP5QitgXePqtjC6XESI0/edit?usp=sharing)
-
-- - -
-
-## References
-
-Menne, M.J., I. Durre, R.S. Vose, B.E. Gleason, and T.G. Houston, 2012: An overview of the Global Historical Climatology Network-Daily Database. Journal of Atmospheric and Oceanic Technology, 29, 897-910, [https://doi.org/10.1175/JTECH-D-11-00103.1](https://doi.org/10.1175/JTECH-D-11-00103.1)
 
 - - -
 
